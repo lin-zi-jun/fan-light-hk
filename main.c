@@ -51,8 +51,8 @@
 
 #define MCU_VER  "mcu ver:V1.0.2"
 
-#define  LIGHT_TIMER_PARA 26300
-#define  LIGHT_SEG_PARA 200
+#define  LIGHT_TIMER_PARA 39000
+#define  LIGHT_SEG_PARA 380
 
 
 

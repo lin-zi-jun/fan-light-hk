@@ -6,7 +6,7 @@
 ProjectName            :=KKwheel
 ConfigurationName      :=BuildSet
 WorkspacePath          :=C:/Users/linzijun/AppData/Roaming/cdk/default_workspace3/
-ProjectPath            :=C:/Users/linzijun/Desktop/fan_light/
+ProjectPath            :=C:/Users/linzijun/Desktop/git/fan-light-hk/
 IntermediateDirectory  :=Obj
 OutDir                 :=$(IntermediateDirectory)
 User                   :=LinZiJun
@@ -107,131 +107,131 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/arch_crt0$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/arch/crt0.S  
+$(IntermediateDirectory)/arch_crt0$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/arch/crt0.S  
 	@echo assembling crt0.S...
-	@$(AS) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/arch/crt0.S" $(ASFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/arch_crt0$(ObjectSuffix) $(IncludeAPath)
-	@$(CC) $(CFLAGS) $(IncludeAPath) -MG -MP -MT$(IntermediateDirectory)/arch_crt0$(ObjectSuffix) -MF$(IntermediateDirectory)/arch_crt0$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/arch/crt0.S"
+	@$(AS) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/arch/crt0.S" $(ASFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/arch_crt0$(ObjectSuffix) $(IncludeAPath)
+	@$(CC) $(CFLAGS) $(IncludeAPath) -MG -MP -MT$(IntermediateDirectory)/arch_crt0$(ObjectSuffix) -MF$(IntermediateDirectory)/arch_crt0$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/arch/crt0.S"
 
-Lst/arch_crt0$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/arch/crt0.S
+Lst/arch_crt0$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/arch/crt0.S
 	@echo generating preprocess file of crt0.S...
-	@$(CC) $(CFLAGS)$(IncludeAPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/arch_crt0$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/arch/crt0.S"
+	@$(CC) $(CFLAGS)$(IncludeAPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/arch_crt0$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/arch/crt0.S"
 
-$(IntermediateDirectory)/arch_apt32f101_mem_init$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/arch/apt32f101_mem_init.c  
+$(IntermediateDirectory)/arch_apt32f101_mem_init$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/arch/apt32f101_mem_init.c  
 	@echo compiling apt32f101_mem_init.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/arch/apt32f101_mem_init.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/arch_apt32f101_mem_init$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/arch_apt32f101_mem_init$(ObjectSuffix) -MF$(IntermediateDirectory)/arch_apt32f101_mem_init$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/arch/apt32f101_mem_init.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/arch/apt32f101_mem_init.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/arch_apt32f101_mem_init$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/arch_apt32f101_mem_init$(ObjectSuffix) -MF$(IntermediateDirectory)/arch_apt32f101_mem_init$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/arch/apt32f101_mem_init.c"
 
-Lst/arch_apt32f101_mem_init$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/arch/apt32f101_mem_init.c
+Lst/arch_apt32f101_mem_init$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/arch/apt32f101_mem_init.c
 	@echo generating preprocess file of apt32f101_mem_init.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/arch_apt32f101_mem_init$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/arch/apt32f101_mem_init.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/arch_apt32f101_mem_init$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/arch/apt32f101_mem_init.c"
 
-$(IntermediateDirectory)/main$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/main.c  
+$(IntermediateDirectory)/main$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/main.c  
 	@echo compiling main.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/main.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/main.c"
 
-Lst/main$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/main.c
+Lst/main$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/main.c
 	@echo generating preprocess file of main.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/main$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/main.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/main$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/main.c"
 
-$(IntermediateDirectory)/apt32f101_interrupt$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/apt32f101_interrupt.c  
+$(IntermediateDirectory)/apt32f101_interrupt$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_interrupt.c  
 	@echo compiling apt32f101_interrupt.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/apt32f101_interrupt.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/apt32f101_interrupt$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/apt32f101_interrupt$(ObjectSuffix) -MF$(IntermediateDirectory)/apt32f101_interrupt$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/apt32f101_interrupt.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_interrupt.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/apt32f101_interrupt$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/apt32f101_interrupt$(ObjectSuffix) -MF$(IntermediateDirectory)/apt32f101_interrupt$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_interrupt.c"
 
-Lst/apt32f101_interrupt$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/apt32f101_interrupt.c
+Lst/apt32f101_interrupt$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_interrupt.c
 	@echo generating preprocess file of apt32f101_interrupt.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/apt32f101_interrupt$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/apt32f101_interrupt.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/apt32f101_interrupt$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_interrupt.c"
 
-$(IntermediateDirectory)/apt32f101_initial$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/apt32f101_initial.c  
+$(IntermediateDirectory)/apt32f101_initial$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_initial.c  
 	@echo compiling apt32f101_initial.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/apt32f101_initial.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/apt32f101_initial$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/apt32f101_initial$(ObjectSuffix) -MF$(IntermediateDirectory)/apt32f101_initial$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/apt32f101_initial.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_initial.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/apt32f101_initial$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/apt32f101_initial$(ObjectSuffix) -MF$(IntermediateDirectory)/apt32f101_initial$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_initial.c"
 
-Lst/apt32f101_initial$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/apt32f101_initial.c
+Lst/apt32f101_initial$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_initial.c
 	@echo generating preprocess file of apt32f101_initial.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/apt32f101_initial$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/apt32f101_initial.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/apt32f101_initial$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/apt32f101_initial.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_gpio$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gpio.c  
+$(IntermediateDirectory)/FWlib_apt32f101_gpio$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gpio.c  
 	@echo compiling apt32f101_gpio.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gpio.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_gpio$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_gpio$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_gpio$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gpio.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gpio.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_gpio$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_gpio$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_gpio$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gpio.c"
 
-Lst/FWlib_apt32f101_gpio$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gpio.c
+Lst/FWlib_apt32f101_gpio$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gpio.c
 	@echo generating preprocess file of apt32f101_gpio.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_gpio$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gpio.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_gpio$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gpio.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_syscon$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_syscon.c  
+$(IntermediateDirectory)/FWlib_apt32f101_syscon$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_syscon.c  
 	@echo compiling apt32f101_syscon.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_syscon.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_syscon$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_syscon$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_syscon$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_syscon.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_syscon.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_syscon$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_syscon$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_syscon$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_syscon.c"
 
-Lst/FWlib_apt32f101_syscon$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_syscon.c
+Lst/FWlib_apt32f101_syscon$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_syscon.c
 	@echo generating preprocess file of apt32f101_syscon.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_syscon$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_syscon.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_syscon$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_syscon.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101.c  
+$(IntermediateDirectory)/FWlib_apt32f101$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101.c  
 	@echo compiling apt32f101.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101.c"
 
-Lst/FWlib_apt32f101$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101.c
+Lst/FWlib_apt32f101$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101.c
 	@echo generating preprocess file of apt32f101.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_ck802$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_ck802.c  
+$(IntermediateDirectory)/FWlib_apt32f101_ck802$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_ck802.c  
 	@echo compiling apt32f101_ck802.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_ck802.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_ck802$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_ck802$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_ck802$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_ck802.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_ck802.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_ck802$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_ck802$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_ck802$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_ck802.c"
 
-Lst/FWlib_apt32f101_ck802$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_ck802.c
+Lst/FWlib_apt32f101_ck802$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_ck802.c
 	@echo generating preprocess file of apt32f101_ck802.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_ck802$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_ck802.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_ck802$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_ck802.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_tkey_Parameter.c  
+$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_tkey_Parameter.c  
 	@echo compiling apt32f101_tkey_Parameter.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_tkey_Parameter.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_tkey_Parameter.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_tkey_Parameter.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_tkey_Parameter$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_tkey_Parameter.c"
 
-Lst/FWlib_apt32f101_tkey_Parameter$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_tkey_Parameter.c
+Lst/FWlib_apt32f101_tkey_Parameter$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_tkey_Parameter.c
 	@echo generating preprocess file of apt32f101_tkey_Parameter.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_tkey_Parameter$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_tkey_Parameter.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_tkey_Parameter$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_tkey_Parameter.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_WheelSlider_Parameter.c  
+$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_WheelSlider_Parameter.c  
 	@echo compiling apt32f101_WheelSlider_Parameter.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_WheelSlider_Parameter.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_WheelSlider_Parameter.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_WheelSlider_Parameter.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_WheelSlider_Parameter$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_WheelSlider_Parameter.c"
 
-Lst/FWlib_apt32f101_WheelSlider_Parameter$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_WheelSlider_Parameter.c
+Lst/FWlib_apt32f101_WheelSlider_Parameter$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_WheelSlider_Parameter.c
 	@echo generating preprocess file of apt32f101_WheelSlider_Parameter.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_WheelSlider_Parameter$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_WheelSlider_Parameter.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_WheelSlider_Parameter$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_WheelSlider_Parameter.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_counta$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_counta.c  
+$(IntermediateDirectory)/FWlib_apt32f101_counta$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_counta.c  
 	@echo compiling apt32f101_counta.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_counta.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_counta$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_counta$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_counta$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_counta.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_counta.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_counta$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_counta$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_counta$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_counta.c"
 
-Lst/FWlib_apt32f101_counta$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_counta.c
+Lst/FWlib_apt32f101_counta$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_counta.c
 	@echo generating preprocess file of apt32f101_counta.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_counta$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_counta.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_counta$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_counta.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_gtc$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gtc.c  
+$(IntermediateDirectory)/FWlib_apt32f101_gtc$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gtc.c  
 	@echo compiling apt32f101_gtc.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gtc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_gtc$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_gtc$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_gtc$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gtc.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gtc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_gtc$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_gtc$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_gtc$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gtc.c"
 
-Lst/FWlib_apt32f101_gtc$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gtc.c
+Lst/FWlib_apt32f101_gtc$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gtc.c
 	@echo generating preprocess file of apt32f101_gtc.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_gtc$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_gtc.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_gtc$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_gtc.c"
 
-$(IntermediateDirectory)/FWlib_apt32f101_uart$(ObjectSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_uart.c  
+$(IntermediateDirectory)/FWlib_apt32f101_uart$(ObjectSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_uart.c  
 	@echo compiling apt32f101_uart.c...
-	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_uart.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_uart$(ObjectSuffix) $(IncludeCPath)
-	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_uart$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_uart$(DependSuffix) -MM "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_uart.c"
+	@$(CC) $(SourceSwitch) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_uart.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/FWlib_apt32f101_uart$(ObjectSuffix) $(IncludeCPath)
+	@$(CC) $(CFLAGS) $(IncludeCPath) -MG -MP -MT$(IntermediateDirectory)/FWlib_apt32f101_uart$(ObjectSuffix) -MF$(IntermediateDirectory)/FWlib_apt32f101_uart$(DependSuffix) -MM "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_uart.c"
 
-Lst/FWlib_apt32f101_uart$(PreprocessSuffix): C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_uart.c
+Lst/FWlib_apt32f101_uart$(PreprocessSuffix): C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_uart.c
 	@echo generating preprocess file of apt32f101_uart.c...
-	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_uart$(PreprocessSuffix) "C:/Users/linzijun/Desktop/fan_light/FWlib/apt32f101_uart.c"
+	@$(CC) $(CFLAGS)$(IncludeCPath) $(PreprocessOnlySwitch) $(OutputSwitch) Lst/FWlib_apt32f101_uart$(PreprocessSuffix) "C:/Users/linzijun/Desktop/git/fan-light-hk/FWlib/apt32f101_uart.c"
 
 
 $(IntermediateDirectory)/__rt_entry$(ObjectSuffix): $(IntermediateDirectory)/__rt_entry$(DependSuffix)
