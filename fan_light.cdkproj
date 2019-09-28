@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Name="KKwheel" Version="1" Language="C">
+  <VirtualDirectory Name="arch">
+    <File Name="arch/crt0.S">
+      <FileOption/>
+    </File>
+    <File Name="arch/apt32f101_mem_init.c">
+      <FileOption/>
+    </File>
+  </VirtualDirectory>
+  <Description/>
+  <Dependencies Name="Debug"/>
+  <VirtualDirectory Name="inc">
+    <File Name="include/apt32f101.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_ck802.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_counta.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_gpio.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_syscon.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_types_local.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_tkey.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_gtc.h">
+      <FileOption/>
+    </File>
+    <File Name="include/apt32f101_uart.h">
+      <FileOption/>
+    </File>
+  </VirtualDirectory>
+  <VirtualDirectory Name="source">
+    <File Name="main.c">
+      <FileOption/>
+    </File>
+    <File Name="apt32f101_interrupt.c">
+      <FileOption/>
+    </File>
+    <File Name="apt32f101_initial.c">
+      <FileOption/>
+    </File>
+    <File Name="ckcpu.ld">
+      <FileOption/>
+    </File>
+  </VirtualDirectory>
+  <Dependencies Name="BuildSet"/>
+  <VirtualDirectory Name="FWlib">
+    <File Name="FWlib/apt32f101_gpio.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_syscon.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_ck802.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_tkey_Parameter.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_WheelSlider_Parameter.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_counta.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_gtc.c">
+      <FileOption/>
+    </File>
+    <File Name="FWlib/apt32f101_uart.c">
+      <FileOption/>
+    </File>
+  </VirtualDirectory>
+  <MonitorProgress>
+    <DebugLaunch>98</DebugLaunch>
+    <FlashOperate>101</FlashOperate>
+  </MonitorProgress>
+  <BuildConfigs>
+    <BuildConfig Name="BuildSet">
+      <Target>
+        <ROMBank Selected="1">
+          <ROM1>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM1>
+          <ROM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM2>
+          <ROM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM3>
+          <ROM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM4>
+          <ROM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+          </ROM5>
+        </ROMBank>
+        <RAMBank>
+          <RAM1>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM1>
+          <RAM2>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM2>
+          <RAM3>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM3>
+          <RAM4>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM4>
+          <RAM5>
+            <InUse>no</InUse>
+            <Start/>
+            <Size/>
+            <Init>yes</Init>
+          </RAM5>
+        </RAMBank>
+        <CPU>ck802</CPU>
+        <UseMiniLib>yes</UseMiniLib>
+        <Endian>little</Endian>
+        <UseHardFloat>no</UseHardFloat>
+        <UseEnhancedLRW>no</UseEnhancedLRW>
+        <UseContinueBuild>no</UseContinueBuild>
+      </Target>
+      <Output>
+        <OutputName>lib_F101TKey_WheelSlider_1_16</OutputName>
+        <Type>Executable</Type>
+        <CreateHexFile>yes</CreateHexFile>
+        <CreateBinFile>no</CreateBinFile>
+        <Preprocessor>no</Preprocessor>
+        <Disasm>no</Disasm>
+        <CallGraph>no</CallGraph>
+        <Map>no</Map>
+      </Output>
+      <User>
+        <BeforeCompile>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeCompile>
+        <BeforeMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </BeforeMake>
+        <AfterMake>
+          <RunUserProg>no</RunUserProg>
+          <UserProgName/>
+        </AfterMake>
+      </User>
+      <Compiler>
+        <Define/>
+        <Undefine/>
+        <Optim>Optimize more (-O2)</Optim>
+        <DebugLevel>Maximum (-g3)</DebugLevel>
+        <IncludePath>$(ProjectPath);$(ProjectPath)//TK_Parameter;$(ProjectPath)/include</IncludePath>
+        <OtherFlags>-mistack</OtherFlags>
+        <Verbose>no</Verbose>
+        <Ansi>no</Ansi>
+        <Syntax>no</Syntax>
+        <Pedantic>no</Pedantic>
+        <PedanticErr>no</PedanticErr>
+        <InhibitWarn>no</InhibitWarn>
+        <AllWarn>yes</AllWarn>
+        <WarnErr>no</WarnErr>
+        <OneElfS>no</OneElfS>
+        <Fstrict>no</Fstrict>
+      </Compiler>
+      <Asm>
+        <Define/>
+        <Undefine/>
+        <IncludePath>$(ProjectPath);$(ProjectPath)//TK_Parameter;$(ProjectPath)include</IncludePath>
+        <OtherFlags/>
+        <DebugLevel>gdwarf2</DebugLevel>
+      </Asm>
+      <Linker>
+        <Garbage>yes</Garbage>
+        <LDFile>$(ProjectPath)/ckcpu.ld</LDFile>
+        <LibName>lib_F101TKey_WheelSlider_1_16_4KEY_256step_2slider</LibName>
+        <LibPath>$(ProjectPath)</LibPath>
+        <OtherFlags/>
+        <AutoLDFile>no</AutoLDFile>
+      </Linker>
+      <Debug>
+        <LoadApplicationAtStartup>yes</LoadApplicationAtStartup>
+        <Connector>ICE</Connector>
+        <StopAt>yes</StopAt>
+        <StopAtText>main</StopAtText>
+        <InitFile>$(ProjectPath)/gdb.init</InitFile>
+        <AutoRun>yes</AutoRun>
+        <ResetType>Soft Reset</ResetType>
+        <SoftResetVal>abcd1234</SoftResetVal>
+        <ResetAfterLoad>no</ResetAfterLoad>
+        <Dumpcore>no</Dumpcore>
+        <DumpcoreText>$(ProjectPath)/$(ProjectName).cdkcore</DumpcoreText>
+        <ConfigICE>
+          <IP>localhost</IP>
+          <PORT>1025</PORT>
+          <Clock>10000</Clock>
+          <Delay>10</Delay>
+          <DDC>yes</DDC>
+          <TRST>no</TRST>
+          <Connect>Normal</Connect>
+          <ResetType>Soft Reset</ResetType>
+          <SoftResetVal>abcd1234</SoftResetVal>
+          <RTOSType>Bare Metal</RTOSType>
+          <DownloadToFlash>yes</DownloadToFlash>
+          <ResetAfterConnect>yes</ResetAfterConnect>
+        </ConfigICE>
+        <ConfigSIM>
+          <SIMTarget>soccfg/cskyv2/smart_card_802_new_cfg.xml</SIMTarget>
+          <OtherFlags/>
+          <NoGraphic>yes</NoGraphic>
+          <Log>no</Log>
+        </ConfigSIM>
+      </Debug>
+      <Flash>
+        <InitFile>$(ProjectPath)/gdb.init</InitFile>
+        <Erase>Erase Full Chip</Erase>
+        <Algorithms Path="">APT_FLASHDOWN.elf</Algorithms>
+        <Program>yes</Program>
+        <Verify>yes</Verify>
+        <ResetAndRun>yes</ResetAndRun>
+      </Flash>
+    </BuildConfig>
+  </BuildConfigs>
+  <DebugSessions>
+    <watchExpressions>R_TK_Slider_Value;R_TK_Wheel_Value;R_TK_Offset;KEY_MAP_16BIT;Led_SVal;Fan_WVal;YSZSendBuf</watchExpressions>
+    <memoryExpressions>;;;</memoryExpressions>
+    <statistics>;;MHZ</statistics>
+    <peripheralTabs/>
+    <WatchDisplayFormat>1</WatchDisplayFormat>
+    <LocalDisplayFormat>0</LocalDisplayFormat>
+    <peripheralsDisFormat>Hex</peripheralsDisFormat>
+    <debugLayout>layout2|name=Project View;caption=Project View;state=31459324;dir=4;layer=1;row=0;pos=0;prop=68571;bestw=456;besth=277;minw=10;minh=5;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Debugger;caption=Debugger;state=14682108;dir=3;layer=1;row=0;pos=0;prop=92874;bestw=341;besth=315;minw=10;minh=5;maxw=-1;maxh=-1;floatx=60;floaty=707;floatw=418;floath=340|name=Frame Info;caption=Frame Info;state=14682108;dir=3;layer=1;row=0;pos=1;prop=100000;bestw=400;besth=300;minw=10;minh=5;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Peripherals;caption=Peripherals;state=1105201150;dir=3;layer=1;row=0;pos=2;prop=100000;bestw=11;besth=43;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Serial Pane;caption=Serial Pane;state=14682110;dir=3;layer=1;row=0;pos=1;prop=100000;bestw=400;besth=300;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Editor;caption=;state=256;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=20;besth=20;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Output View;caption=Output View;state=31459326;dir=3;layer=1;row=0;pos=1;prop=100000;bestw=958;besth=244;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=Disassemble;caption=Disassemble;state=2099198;dir=3;layer=1;row=0;pos=2;prop=158373;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=1746;floaty=812;floatw=216;floath=236|name=Register;caption=Register;state=2115582;dir=4;layer=1;row=0;pos=1;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=83;floaty=444;floatw=218;floath=240|name=Outline;caption=Outline;state=2099198;dir=2;layer=0;row=2;pos=0;prop=100000;bestw=200;besth=200;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=1823;floaty=285;floatw=216;floath=236|dock_size(4,1,0)=273|dock_size(5,0,0)=20|dock_size(3,1,0)=309|</debugLayout>
+  </DebugSessions>
+</Project>
