@@ -327,8 +327,6 @@ void led_dimmer(unsigned char Led_S,unsigned char Fan_W){
 	static unsigned char _Led_S = 0;
 	static unsigned char _Fan_W = 0;
 	static unsigned char Light_led_num,Fan_led_num;
-//	static unsigned char ON_Light_led_num,ON_Fan_led_num;
-//	static unsigned char OFF_Light_led_num,OFF_Fan_led_num;
 	static unsigned char RLY_F_Flag=0;
 	static unsigned char RLY_L_Flag=0;
 	static unsigned char fix_one=0;
@@ -369,25 +367,6 @@ void led_dimmer(unsigned char Led_S,unsigned char Fan_W){
 		}
 			_Fan_W=Fan_W;
 			
-			
-//		if (_Fan_W > 0){
-//
-//				if(0<_Fan_W&&_Fan_W<=12){
-//					Fan_led_num=1;	
-//				}else if(12<_Fan_W&&_Fan_W<=34){
-//					Fan_led_num=2;	
-//				}else if(34<_Fan_W&&_Fan_W<=50){
-//					Fan_led_num=3;	
-//				}else if(50<_Fan_W&&_Fan_W<=70){
-//					Fan_led_num=4;	
-//				}else if(70<_Fan_W&&_Fan_W<=86){
-//					Fan_led_num=5;	
-//				}else if(86<_Fan_W&&_Fan_W<=92){
-//					Fan_led_num=6;	
-//				}else if(92<_Fan_W&&_Fan_W<=100){
-//					Fan_led_num=7;	
-//				}
-//		}
 
 		if (_Fan_W > 0){
 
@@ -479,15 +458,6 @@ void led_dimmer(unsigned char Led_S,unsigned char Fan_W){
 			uart_send_buf[3]='#';
 			UARTTransmit(UART1,uart_send_buf,4);
 			Send_cmd_Flag--;
-	}
-	
-	if((_Fan_W==1)||(_Fan_W==2)||(_Fan_W==3)||(_Led_S==1)||(_Led_S==2)||(_Led_S==3)){
-			if(fix_one==0){
-				fix_one=1;
-				UARTTransmit(UART1,uart_send_buf,4);
-			}
-	}else{
-		fix_one=0;
 	}
 }
 
